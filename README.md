@@ -26,11 +26,12 @@ A comprehensive subdomain enumeration and reconnaissance tool that automates dis
  - [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) | v3.1.0 | Screenshot capture & header analysis |
 
 # Install Go tools
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install -v github.com/findomain/findomain@latest
-go install -v github.com/tomnomnom/assetfinder@latest
-go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+
+ - go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+ - go install -v github.com/findomain/findomain@latest
+ - go install -v github.com/tomnomnom/assetfinder@latest
+ - go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+ - go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 
 ## Usage 
 
