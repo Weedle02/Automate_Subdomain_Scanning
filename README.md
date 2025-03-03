@@ -18,12 +18,12 @@ A comprehensive subdomain enumeration and reconnaissance tool that automates dis
 
 ## Tools Used
 
-| [subfinder](https://github.com/projectdiscovery/subfinder) | v2.6.4 | Subdomain discovery |
-| [findomain](https://github.com/Findomain/Findomain) | v9.0.4 | Certificate transparency parsing |
-| [assetfinder](https://github.com/tomnomnom/assetfinder) | v0.1.1 | Domain association discovery |
-| [dnsx](https://github.com/projectdiscovery/dnsx) | v1.1.6 | DNS record validation |
-| [httpx](https://github.com/projectdiscovery/httpx) | v1.3.8 | HTTP service analysis |
-| [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) | v3.1.0 | Screenshot capture & header analysis |
+ - [subfinder](https://github.com/projectdiscovery/subfinder) | v2.6.4 | Subdomain discovery |
+ - [findomain](https://github.com/Findomain/Findomain) | v9.0.4 | Certificate transparency parsing |
+ - [assetfinder](https://github.com/tomnomnom/assetfinder) | v0.1.1 | Domain association discovery |
+ - [dnsx](https://github.com/projectdiscovery/dnsx) | v1.1.6 | DNS record validation |
+ - [httpx](https://github.com/projectdiscovery/httpx) | v1.3.8 | HTTP service analysis |
+ - [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) | v3.1.0 | Screenshot capture & header analysis |
 
 # Install Go tools
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
@@ -34,7 +34,11 @@ go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 
 ## Usage 
 
+Basic enumeration:
 python3 subenum.py -d example.com
+
+Full reconnaissance with screenshots:
+python3 subenum.py -d example.com --screenshots
 
 ## Output Structure
 
@@ -47,5 +51,13 @@ SR/
     ├── screenshots/
     ├── report.html
     └── headers.csv
+
+## Notes
+
+ - Requires API keys for subfinder (create ~/.config/subfinder/config.yaml)
+
+ - Add --break-system-packages if encountering Python permission errors
+
+ - Screenshot capture may take 1-2 seconds per subdomain
 
 
