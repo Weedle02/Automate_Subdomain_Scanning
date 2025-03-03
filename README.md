@@ -41,18 +41,6 @@ python3 subenum.py -d example.com
 Full reconnaissance with screenshots:
 python3 subenum.py -d example.com --screenshots
 
-## Output Structure
-
-SR/
-├── example_com_raw.txt
-├── example_com_dns_validated.txt
-├── example_com_web_active.txt
-├── example_com_web_clean.txt
-└── EyeWitness_Report/
-    ├── screenshots/
-    ├── report.html
-    └── headers.csv
-
 ## Notes
 
  - Requires API keys for subfinder (create ~/.config/subfinder/config.yaml)
