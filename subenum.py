@@ -5,13 +5,14 @@ import os
 import glob
 import re  
 
+# Change to your paths
 TOOLS = {
-    "subfinder": "/home/user/go/bin/subfinder",
-    "findomain": "/usr/bin/findomain",
-    "assetfinder": "/home/user/go/bin/assetfinder",
-    "dnsx": "/home/user/go/bin/dnsx",
-    "httpx": "/home/user/go/bin/httpx",
-    "eyewitness": "/home/user/go/bin/EyeWitness/Python/EyeWitness.py"
+    "subfinder": "/Path/to/subfinder",
+    "findomain": "/Path/to/findomain",
+    "assetfinder": "/Path/to/assetfinder",
+    "dnsx": "/Path/to/dnsx",
+    "httpx": "/Path/to/httpx",
+    "eyewitness": "/Path/to/EyeWitness.py"
 }
 
 def sanitize_domain(domain):
